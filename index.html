@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Submitting Short Stories — Silver Current Press</title>
+<meta name="description" content="A practical guide for adult and emerging fiction writers: how to prepare, place, and track your short stories, plus a curated list of welcoming journals, contests, and tools for 2026. From Silver Current Press." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,500,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..700;1,8..60,400&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --navy: #0F2545;
+    --navy-soft: #1c3a63;
+    --gold: #A8893E;
+    --gold-soft: #c2a558;
+    --cream: #F8F4EA;
+    --cream-deep: #f1ead9;
+    --ink: #24211b;
+    --muted: #6b6555;
+    --line: #e2d9c3;
+    --white: #ffffff;
+    --font-display: 'Zodiak', 'Georgia', serif;
+    --font-body: 'Source Serif 4', 'Georgia', serif;
+    --font-ui: 'Source Sans 3', system-ui, sans-serif;
+    --maxw: 1080px;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--font-body);
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+  }
+  a { color: var(--navy); text-decoration: none; }
+  a:hover { color: var(--gold); }
+
+  /* ---- Top bar ---- */
+  .topbar {
+    background: var(--navy);
+    color: var(--cream);
+    border-bottom: 3px solid var(--gold);
+  }
+  .topbar-inner {
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 18px 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+  }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand svg { width: 34px; height: 34px; color: var(--gold-soft); flex: none; }
+  .brand-text { font-family: var(--font-ui); font-weight: 600; letter-spacing: .04em; font-size: 15px; text-transform: uppercase; color: var(--cream); }
+  .brand-text span { display: block; font-weight: 400; font-size: 11px; letter-spacing: .18em; color: var(--gold-soft); margin-top: 2px; }
+  .topbar a.nav-cta {
+    font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+    letter-spacing: .04em; text-transform: uppercase;
+    color: var(--navy); background: var(--gold-soft);
+    padding: 9px 16px; border-radius: 2px; white-space: nowrap;
+  }
+  .topbar a.nav-cta:hover { background: var(--cream); color: var(--navy); }
+
+  /* ---- Hero ---- */
+  .hero {
+    background:
+      linear-gradient(180deg, rgba(15,37,69,.03), rgba(15,37,69,0)),
+      var(--cream);
+    padding: 84px 28px 64px;
+    text-align: center;
+    border-bottom: 1px solid var(--line);
+  }
+  .hero-inner { max-width: 820px; margin: 0 auto; }
+  .rule { width: 64px; height: 2px; background: var(--gold); margin: 0 auto 26px; }
+  .eyebrow {
+    font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+    letter-spacing: .22em; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: clamp(2.4rem, 6vw, 4.1rem); line-height: 1.05;
+    color: var(--navy); letter-spacing: -0.01em;
+  }
+  .hero .sub {
+    font-family: var(--font-display); font-style: italic; font-weight: 400;
+    font-size: clamp(1.1rem, 2.4vw, 1.5rem); color: var(--gold);
+    margin-top: 14px;
+  }
+  .hero p.lede {
+    max-width: 620px; margin: 26px auto 0; color: var(--muted);
+    font-size: 1.08rem;
+  }
+  .hero-actions { margin-top: 36px; display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn {
+    font-family: var(--font-ui); font-size: 14px; font-weight: 600;
+    letter-spacing: .04em; text-transform: uppercase;
+    padding: 14px 26px; border-radius: 2px; display: inline-flex; align-items: center; gap: 9px;
+    transition: all .18s ease; border: 1.5px solid var(--navy);
+  }
+  .btn-primary { background: var(--navy); color: var(--cream); }
+  .btn-primary:hover { background: var(--navy-soft); color: var(--white); }
+  .btn-ghost { background: transparent; color: var(--navy); border-color: var(--gold); }
+  .btn-ghost:hover { background: var(--cream-deep); color: var(--navy); }
+  .btn svg { width: 16px; height: 16px; }
+
+  /* ---- Layout ---- */
+  main { max-width: var(--maxw); margin: 0 auto; padding: 64px 28px 40px; }
+  section { margin-bottom: 64px; scroll-margin-top: 90px; }
+  .section-head { margin-bottom: 26px; }
+  .kicker { font-family: var(--font-ui); font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  h2 {
+    font-family: var(--font-display); font-weight: 500; font-size: clamp(1.7rem, 3.4vw, 2.3rem);
+    color: var(--navy); line-height: 1.15; padding-bottom: 12px; border-bottom: 1px solid var(--line);
+  }
+  h3 { font-family: var(--font-display); font-weight: 500; font-size: 1.3rem; color: var(--navy); margin: 30px 0 10px; }
+  section > p { margin-bottom: 14px; max-width: 760px; }
+
+  /* ---- How-to grid ---- */
+  .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 8px; }
+  .card {
+    background: var(--white); border: 1px solid var(--line);
+    border-top: 3px solid var(--gold); border-radius: 3px;
+    padding: 22px 24px; box-shadow: 0 1px 2px rgba(15,37,69,.04);
+  }
+  .card .num { font-family: var(--font-ui); font-weight: 700; font-size: 13px; color: var(--gold); letter-spacing: .08em; }
+  .card h4 { font-family: var(--font-display); font-weight: 500; font-size: 1.18rem; color: var(--navy); margin: 4px 0 8px; }
+  .card p { font-size: .97rem; color: var(--ink); }
+  .card ul { margin: 6px 0 0 18px; font-size: .95rem; }
+  .card li { margin-bottom: 5px; }
+
+  /* ---- Cover letter box ---- */
+  .letter {
+    background: var(--cream-deep); border: 1px solid var(--gold);
+    border-radius: 3px; padding: 26px 28px; margin-top: 14px;
+    font-family: var(--font-body); font-style: italic; color: var(--ink);
+    max-width: 720px;
+  }
+  .letter p { margin-bottom: 14px; }
+  .letter p:last-child { margin-bottom: 0; }
+  .note { font-family: var(--font-body); font-style: italic; color: var(--muted); font-size: .95rem; margin-top: 12px; max-width: 760px; }
+
+  /* ---- Tables ---- */
+  .table-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; margin-top: 10px; }
+  table { width: 100%; border-collapse: collapse; font-size: .92rem; min-width: 640px; }
+  thead th {
+    background: var(--navy); color: var(--cream); font-family: var(--font-ui);
+    font-weight: 600; font-size: 12px; letter-spacing: .04em; text-transform: uppercase;
+    text-align: left; padding: 11px 14px;
+  }
+  tbody td { padding: 11px 14px; border-top: 1px solid var(--line); vertical-align: top; }
+  tbody tr:nth-child(even) { background: var(--cream-deep); }
+  tbody .name { font-family: var(--font-display); font-weight: 500; color: var(--navy); }
+  .tag { font-family: var(--font-ui); font-size: 11px; font-weight: 700; letter-spacing: .03em; padding: 2px 8px; border-radius: 2px; white-space: nowrap; }
+  .tag-free { background: #e6efe1; color: #3d6b28; }
+  .tag-paid { background: #f3e9dd; color: #8a5a1e; }
+
+  /* ---- Tools ---- */
+  .tools { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+  .tool { background: var(--white); border: 1px solid var(--line); border-radius: 3px; padding: 20px 22px; }
+  .tool h4 { font-family: var(--font-display); font-weight: 500; font-size: 1.15rem; color: var(--navy); }
+  .tool .cost { font-family: var(--font-ui); font-size: 12px; font-weight: 600; color: var(--gold); text-transform: uppercase; letter-spacing: .05em; margin: 2px 0 8px; }
+  .tool p { font-size: .95rem; color: var(--ink); }
+
+  /* ---- Plan ---- */
+  .plan { counter-reset: step; margin-top: 10px; max-width: 720px; }
+  .plan-item { display: flex; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+  .plan-item:last-child { border-bottom: none; }
+  .plan-item .n {
+    flex: none; width: 34px; height: 34px; border-radius: 50%;
+    background: var(--navy); color: var(--cream); font-family: var(--font-ui);
+    font-weight: 700; display: flex; align-items: center; justify-content: center; font-size: 15px;
+  }
+  .plan-item p { margin: 0; padding-top: 4px; }
+
+  .closing { text-align: center; font-family: var(--font-display); font-style: italic; font-size: 1.3rem; color: var(--navy); max-width: 640px; margin: 8px auto 0; }
+
+  /* ---- Glossary ---- */
+  .glossary { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 4px 28px; margin-top: 10px; }
+  .glossary > div { padding: 12px 0; border-bottom: 1px solid var(--line); }
+  .glossary dt { font-family: var(--font-display); font-weight: 500; color: var(--navy); font-size: 1.05rem; }
+  .glossary dd { margin: 4px 0 0; font-size: .95rem; color: var(--ink); }
+
+  /* ---- Footer ---- */
+  footer { background: var(--navy); color: var(--cream); margin-top: 40px; }
+  .footer-inner { max-width: var(--maxw); margin: 0 auto; padding: 40px 28px; text-align: center; }
+  .footer-inner .rule { background: var(--gold); }
+  footer .press { font-family: var(--font-display); font-size: 1.25rem; color: var(--cream); }
+  footer .tag-line { font-family: var(--font-ui); font-size: 12px; letter-spacing: .16em; text-transform: uppercase; color: var(--gold-soft); margin-top: 6px; }
+  footer .disclaimer { font-size: .85rem; color: #b9c2d0; max-width: 640px; margin: 18px auto 0; font-style: italic; }
+  footer .meta { font-family: var(--font-ui); font-size: 12px; color: #8b97a8; margin-top: 18px; }
+
+  .anchor-nav { display: flex; flex-wrap: wrap; gap: 10px 20px; justify-content: center; margin-top: 30px; }
+  .anchor-nav a { font-family: var(--font-ui); font-size: 13px; letter-spacing: .03em; color: var(--muted); border-bottom: 1px solid transparent; padding-bottom: 2px; }
+  .anchor-nav a:hover { color: var(--navy); border-bottom-color: var(--gold); }
+
+  @media (max-width: 560px) {
+    body { font-size: 17px; }
+    .hero { padding: 56px 20px 44px; }
+    main { padding: 44px 20px 30px; }
+    .topbar-inner { padding: 14px 20px; }
+    .brand-text { font-size: 13px; }
+  }
+
+  /* ---- Personal note ---- */
+  .personal-note {
+    background: linear-gradient(180deg, var(--white), var(--cream));
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--gold);
+    border-radius: 3px;
+    padding: 48px 44px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 1px 0 rgba(15,37,69,.03);
+  }
+  .personal-note .pn-kicker {
+    font-family: var(--font-ui); font-size: 12px; font-weight: 700;
+    letter-spacing: .2em; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 8px; text-align: center;
+  }
+  .personal-note h2 {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: clamp(1.7rem, 3.4vw, 2.3rem); color: var(--navy);
+    line-height: 1.15; text-align: center; border: none; padding: 0;
+    margin-bottom: 26px;
+  }
+  .personal-note p { margin-bottom: 18px; }
+  .personal-note p:last-of-type { margin-bottom: 0; }
+  .personal-note .pn-sign {
+    font-family: var(--font-display); font-style: italic; font-size: 1.15rem;
+    color: var(--navy); margin-top: 28px; text-align: right;
+  }
+  @media (max-width: 560px) {
+    .personal-note { padding: 34px 22px; }
+  }
+
+  /* ---- Featured creed sample ---- */
+  .creed-wrap { max-width: 820px; margin: 0 auto; }
+  .creed-wrap .pn-kicker {
+    font-family: var(--font-ui); font-size: 12px; font-weight: 700;
+    letter-spacing: .2em; text-transform: uppercase; color: var(--gold);
+    margin-bottom: 8px; text-align: center;
+  }
+  .creed-wrap h2 {
+    font-family: var(--font-display); font-weight: 500;
+    font-size: clamp(1.7rem, 3.4vw, 2.3rem); color: var(--navy);
+    line-height: 1.15; text-align: center; border: none; padding: 0; margin-bottom: 18px;
+  }
+  .creed-intro {
+    font-family: var(--font-body); font-style: italic; color: var(--muted);
+    text-align: center; max-width: 680px; margin: 0 auto 30px;
+  }
+  .creed {
+    border-left: 3px solid var(--gold);
+    background: var(--cream-deep);
+    padding: 32px 34px;
+    border-radius: 0 3px 3px 0;
+  }
+  .creed p { margin-bottom: 16px; }
+  .creed p:last-child { margin-bottom: 0; }
+  .creed .creed-sign {
+    font-family: var(--font-display); font-style: italic;
+    color: var(--navy); text-align: right; margin-top: 22px;
+  }
+  @media (max-width: 560px) { .creed { padding: 24px 20px; } }
+  /* ---- Intro samples extras ---- */
+  .intro-h3 {
+    font-family: var(--font-display); font-weight: 500; color: var(--navy);
+    font-size: 1.25rem; margin: 34px 0 14px; text-align: left;
+  }
+  .intro-h3:first-of-type { margin-top: 10px; }
+  .wip-tag {
+    font-family: var(--font-ui); font-style: normal; font-size: 11px;
+    letter-spacing: .08em; text-transform: uppercase; color: var(--gold);
+    background: rgba(168,137,62,.12); padding: 3px 8px; border-radius: 2px;
+    vertical-align: middle;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <svg viewBox="0 0 48 48" fill="none" aria-label="Silver Current Press">
+        <circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="2"/>
+        <path d="M13 28c4-6 7-6 11 0s7 6 11 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="M13 20c4-6 7-6 11 0s7 6 11 0" stroke="currentColor" stroke-width="2" stroke-linecap="round" opacity="0.55"/>
+      </svg>
+      <div class="brand-text">Silver Current Press<span>Poets &amp; Writers Resources</span></div>
+    </div>
+    <a class="nav-cta" href="Submitting_Short_Stories.pdf" download>Download PDF</a>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div class="rule"></div>
+    <div class="eyebrow">A Silver Current Press Guide</div>
+    <h1>Submitting Short Stories</h1>
+    <div class="sub">A Practical Guide for Adult & Emerging Fiction Writers</div>
+    <p class="lede">How to prepare, place, and track your short stories and flash fiction — plus a curated list of welcoming journals, contests, and tools for 2026.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="Submitting_Short_Stories.pdf" download>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 21h14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Download the PDF Handout
+      </a>
+      <a class="btn btn-ghost" href="#journals">Browse the Venues</a>
+    </div>
+    <nav class="anchor-nav">
+      <a href="#howto">How to Submit</a>
+      <a href="#know">What to Know</a>
+      <a href="#journals">Journals</a>
+      <a href="#contests">Contests</a>
+      <a href="#tools">Tools</a>
+      <a href="#glossary">Glossary</a>
+      <a href="#plan">Starting Plan</a>
+      <a href="#note">A Note</a>
+      <a href="#creed">Artistic Creed</a>
+      <a href="#intros">Sample Intros</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <section id="howto">
+    <div class="section-head">
+      <div class="kicker">Part One</div>
+      <h2>How to Submit Your Short Fiction</h2>
+    </div>
+    <p>Submitting fiction is a craft of its own. The story matters most, but editors also notice whether a writer follows guidelines, writes a clean cover letter, and behaves professionally. None of it is difficult — it simply rewards patience and a little organization.</p>
+    <div class="steps">
+      <div class="card"><div class="num">01</div><h4>Before You Send</h4><ul><li>Revise, then rest — read the finished story aloud after a week.</li><li>Open strong; editors often decide within the first page.</li><li>Cut everything the story can live without.</li><li>Keep a master file and a status spreadsheet.</li></ul></div>
+<div class="card"><div class="num">02</div><h4>Choosing Where to Submit</h4><ul><li>Read an issue first — fit matters more than prestige.</li><li>Check the reading period before submitting.</li><li>Mind the word-count limit (flash, short, standard).</li><li>Note the fee; many fine journals are free.</li></ul></div>
+<div class="card"><div class="num">03</div><h4>Formatting Your Story</h4><ul><li>Standard manuscript format: 12-pt serif, double-spaced.</li><li>Header with your name, title, and page number.</li><li>Title and word count on the first page.</li><li>Send .docx unless a journal requests otherwise.</li></ul></div>
+<div class="card"><div class="num">05</div><h4>Simultaneous Subs & Etiquette</h4><ul><li>Submit to several journals at once unless forbidden.</li><li>Withdraw everywhere the moment a story is accepted.</li><li>Don't query before the stated response time.</li><li>Send one story per submission unless flash allows more.</li></ul></div>
+<div class="card"><div class="num">06</div><h4>Using Submittable</h4><ul><li>Free for writers — one account tracks everything.</li><li>Any fee shown belongs to the journal, not the platform.</li><li>Follow each form's exact instructions.</li><li>Withdraw from the dashboard when accepted elsewhere.</li></ul></div>
+<div class="card"><div class="num">08</div><h4>Handling Responses</h4><ul><li>Expect rejection — it's about fit, not worth.</li><li>Take a personal 'please send again' seriously.</li><li>Read the contract; note rights and reprint terms.</li><li>Submit steadily to build a publication record.</li></ul></div>
+    </div>
+
+    <h3>04 &nbsp;· &nbsp;Writing the Cover Letter</h3>
+    <p>A cover letter is short, warm, and professional — three or four sentences. It does not explain or defend the story. A reliable template:</p>
+    <div class="letter">
+      <p>Dear Editors,</p><p>Please consider my short story, &ldquo;[Title],&rdquo; (about [word count] words) for publication in [Journal Name].</p><p>[One sentence of bio: recent publications, or simply that this would be among your first. If you have none, say so plainly — editors publish new writers every issue.]</p><p>Thank you for your time and for the work you do. I look forward to hearing from you.</p><p>Warmly,<br>[Your Name]</p>
+    </div>
+    <p class="note">Do not: apologize, summarize the plot, list every credit you have, or address editors by the wrong journal name. Always double-check you have the right journal in the greeting.</p>
+  </section>
+
+  <section id="know">
+    <div class="section-head">
+      <div class="kicker">Before You Begin</div>
+      <h2>What Every New Fiction Writer Should Know</h2>
+    </div>
+    <h3>Rights &amp; What Editors Actually Buy</h3><p>When a journal accepts a story, it does not own it forever. Most acquire <strong>First Serial Rights</strong> (often First North American Serial Rights) — the right to be the first to publish it. After publication, those rights return to you, and you keep the copyright throughout. You are then free to reprint the story in a collection or, once it counts as a reprint, submit it to venues that accept previously published work. Always read the acceptance note to confirm what rights are taken and when they revert.</p><h3>&ldquo;Published&rdquo; Is Broader Than You Think</h3><p>Nearly all journals want <strong>unpublished</strong> stories, and many define &ldquo;published&rdquo; to include your personal blog, a public social-media post, a contest anthology, or a piece posted in an online workshop. If a story has appeared anywhere public, treat it as a reprint and look specifically for journals that accept reprints. When in doubt, ask the editor before submitting.</p><h3>Reading Fees &mdash; and the No-Fee Philosophy</h3><p>Some journals charge a small fee (often $2&ndash;$3) to submit, usually to cover their submission platform. This is normal and not a scam. But you never need to pay to build a serious publication record: the majority of respected journals are free, and many paying journals offer <strong>fee waivers</strong> on request. Reserve paid submissions and contest fees for venues you genuinely want.</p><h3>Avoiding Vanity Presses &amp; Scams</h3><p>Legitimate journals and contests never ask you to <em>buy</em> your way into print.</p><div class="steps"><div class="card"><h4>&ldquo;You&rsquo;ve been selected!&rdquo;</h4><p>Unsolicited emails congratulating you and then asking you to buy an expensive anthology or &ldquo;certificate.&rdquo; Real acceptances don&rsquo;t require a purchase.</p></div><div class="card"><h4>Everyone wins</h4><p>&ldquo;Contests&rdquo; that accept virtually everyone and profit by selling the anthology back to contributors. A real contest has genuine selection and named judges.</p></div><div class="card"><h4>Rights grabs</h4><p>Terms that claim <em>all</em> rights or ownership of your work in perpetuity. Legitimate journals take first or one-time rights, then return them.</p></div><div class="card"><h4>High fees, no pay</h4><p>Large submission or &ldquo;editing&rdquo; fees with no payment to writers and no track record. Check a venue&rsquo;s reputation before paying anything.</p></div></div><p class="note">When unsure, look a venue up on Poets &amp; Writers, check whether respected writers have published there, and search Writer Beware for warnings.</p><h3>Payment: What to Expect</h3><p>Short fiction pays a wide range. Many fine journals pay in contributor copies or a token amount; stronger-paying markets offer anywhere from $50 to several hundred dollars per story, and a few pay more. Publishing for little or no pay is normal early on; the value is in readership, credits, and building toward a collection or a novel.</p><h3>Flash, Short, and the Path to a Collection</h3><p>Most fiction writers build in stages. Place <strong>flash</strong> (usually under 1,000 words) and <strong>short stories</strong> in journals first. Over time those credits accumulate into a <strong>collection</strong> you can submit to contests and small presses, and they strengthen a query when you have a novel to sell. Every published story is a brick in that foundation.</p><h3>Patience &amp; Persistence</h3><p>Response times commonly run one to six months, and rejection is the norm even for accomplished writers — acceptance rates at good journals are often under five percent. A &ldquo;no&rdquo; usually means the story didn&rsquo;t fit that issue, not that it lacks worth. Keep a steady rhythm of submissions, celebrate personal notes from editors, and treat each rejection as one step closer to the right home for the story.</p>
+  </section>
+
+  <section id="journals">
+    <div class="section-head">
+      <div class="kicker">Part Two · Where to Submit</div>
+      <h2>Beginner-Friendly Literary Journals</h2>
+    </div>
+    <p>These journals publish short fiction and either welcome emerging writers explicitly or keep barriers low. Most are free to submit to. Every venue was verified on its own website in July 2026 — always confirm current guidelines before submitting.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Journal</th><th>What They Publish</th><th>Fee</th><th>Reading Period</th><th>Per Sub</th></tr></thead>
+        <tbody>
+          <tr><td class="name"><a href="https://www.one-story.com/submit/" target="_blank" rel="noopener">One Story</a></td><td>Literary fiction — one story per issue</td><td><span class="tag tag-free">Free</span></td><td>Cyclical/capped; spring 2026 period closed at cap; next period opens June 8, 2026</td><td>3,000–8,000 words; one story per submission period</td></tr>
+<tr><td class="name"><a href="https://www.thesunmagazine.org/submit/essays-fiction-poetry" target="_blank" rel="noopener">The Sun</a></td><td>Emotionally honest short stories (plus essays, poetry, photography)</td><td><span class="tag tag-free">$2.50 online processing fee (free by mail with SASE)</span></td><td>n.a. (not stated on page; accepts year-round via Submittable)</td><td>No formal word limit, rarely publishes over 7,000 words; pieces-per-sub not stated for fiction</td></tr>
+<tr><td class="name"><a href="https://www.pshares.org/submit" target="_blank" rel="noopener">Ploughshares</a></td><td>Fiction, poetry, and nonfiction</td><td><span class="tag tag-free">Free</span></td><td>June 1 – November 15</td><td>Word limit n.a.; one submission per reading period</td></tr>
+<tr><td class="name"><a href="https://www.smokelong.com/guidelines/" target="_blank" rel="noopener">SmokeLong Quarterly</a></td><td>Flash narratives (flash-only)</td><td><span class="tag tag-free">Free</span></td><td>Rolling by issue (e.g. Nov 16–Feb 15; May 15–Aug 15; Aug 16–Nov 15); closed Feb 16–May 14 for the Award</td><td>Up to 1,000 words; one piece (or up to three via multiple-sub option). Flash-only.</td></tr>
+<tr><td class="name"><a href="https://wigleaf.com/aboutnew.htm" target="_blank" rel="noopener">Wigleaf</a></td><td>Stories under 1,000 words (flash-only)</td><td><span class="tag tag-free">Free</span></td><td>Final 7 days of Aug, Sep, Oct, Jan, Feb, Mar; the 8th–14th in Nov and Apr; closed in Dec</td><td>Under 1,000 words; pieces-per-sub not stated on page. Flash-only.</td></tr>
+<tr><td class="name"><a href="https://www.matchbooklitmag.com/guidelines" target="_blank" rel="noopener">matchbook</a></td><td>Short fiction, creative nonfiction, and indeterminate prose (brief)</td><td><span class="tag tag-free">Free</span></td><td>Open May 25 – June 2, 2026</td><td>Prefers under 1,000 words; up to three pieces if longish, five if shortish</td></tr>
+<tr><td class="name"><a href="https://www.craftliterary.com/submit/" target="_blank" rel="noopener">CRAFT</a></td><td>Fiction (flash and short) and creative nonfiction</td><td><span class="tag tag-free">Free</span></td><td>n.a. (not stated on page)</td><td>Flash up to 1,000 words; short fiction up to 6,000 words; one piece per genre at a time</td></tr>
+<tr><td class="name"><a href="https://mastersreview.com/submissions/" target="_blank" rel="noopener">The Masters Review – New Voices</a></td><td>New writing by emerging writers (fiction and CNF)</td><td><span class="tag tag-free">Free</span></td><td>Open year-round</td><td>Under 7,000 words (up to three flash pieces in one document); eligibility: no novel-length work with a major press</td></tr>
+<tr><td class="name"><a href="https://splitlipthemag.com/submit" target="_blank" rel="noopener">Split Lip Magazine</a></td><td>Flash, fiction, memoir, poetry, art, interviews</td><td><span class="tag tag-free">Free</span></td><td>Year-round except closed July 1–Aug 15 and Dec 15–31</td><td>Flash under 1,000 words; fiction 1,000–3,000 words; one submission per writer at a time</td></tr>
+<tr><td class="name"><a href="https://fracturedlit.com/submissions/" target="_blank" rel="noopener">Fractured Lit</a></td><td>Microfiction (up to 400 words) and flash fiction (401–1,000 words) (flash-only)</td><td><span class="tag tag-free">$20 reading fee (limited free entries for historically marginalized writers, cap 25)</span></td><td>Cyclical opens (e.g. 2026 Flash Fiction Open May 11 – July 12, 2026)</td><td>Up to 1,000 words per story; up to two stories per entry. Flash-only.</td></tr>
+<tr><td class="name"><a href="https://flash-frog.com/submit/" target="_blank" rel="noopener">Flash Frog</a></td><td>Flash fiction only (flash-only)</td><td><span class="tag tag-free">Free</span></td><td>Open year-round (Jan = contest only; July = ghost stories only; general reopens Aug 1)</td><td>1,000 words maximum; one story at a time (no multiple subs). Flash-only.</td></tr>
+<tr><td class="name"><a href="https://readwildness.com/submit" target="_blank" rel="noopener">Wildness</a></td><td>Poetry, fiction, and non-fiction</td><td><span class="tag tag-free">Free</span></td><td>Rolling; reading for the next open issue (Autumn 2026)</td><td>Fiction/nonfiction limited to 1,000 words; one prose submission (up to 5 poems)</td></tr>
+<tr><td class="name"><a href="https://www.threepennyreview.com/submissions/" target="_blank" rel="noopener">The Threepenny Review</a></td><td>Short stories and memoirs (plus essays, poetry, Table Talk)</td><td><span class="tag tag-free">Free</span></td><td>Reads Jan 1 – Apr 14 only (non-reading period Apr 15 – Dec 31)</td><td>Stories/memoirs 4,000 words or less; a single story per online submission</td></tr>
+<tr><td class="name"><a href="https://www.hobartpulp.com/submit" target="_blank" rel="noopener">Hobart</a></td><td>General fiction and nonfiction (email submissions; e.g. sports fiction, essays, reviews)</td><td><span class="tag tag-free">Free</span></td><td>Open (email to a specific editor or hobartsubmissions@gmail.com); SF/LD book subs closed</td><td>Word limit n.a.; put title and genre in subject line</td></tr>
+<tr><td class="name"><a href="https://xray.submittable.com/submit" target="_blank" rel="noopener">X-R-A-Y</a></td><td>Prose only — short stories, flash fiction, CNF, and micros (no poetry)</td><td><span class="tag tag-free">Free</span></td><td>Opens the 1st of each month (micros the 21st); closes when monthly cap is reached</td><td>Short stories 2,000–7,500 words; flash 300–2,000 words; micros up to 300 words; one piece per submission</td></tr>
+<tr><td class="name"><a href="https://passagesnorth.submittable.com/" target="_blank" rel="noopener">Passages North</a></td><td>Fiction, poetry, short-shorts, nonfiction, and hybrid</td><td><span class="tag tag-free">Free</span></td><td>Fiction usually open Sep 1 – Oct 15 and Jan 1 – Feb 15</td><td>Word limit n.a.; pieces-per-sub n.a. (not stated on page)</td></tr>
+<tr><td class="name"><a href="https://www.cheappoplit.com/submit" target="_blank" rel="noopener">CHEAP POP</a></td><td>Flash fiction and CNF, 500 words or less (flash-only)</td><td><span class="tag tag-free">Free</span></td><td>PAUSED — &#x27;Submissions will be closed until further notice&#x27;; normally cyclical (June and November)</td><td>500 words or less; one piece at a time. Flash-only. Currently closed.</td></tr>
+<tr><td class="name"><a href="https://www.nocontactmag.com/general-submissions" target="_blank" rel="noopener">No Contact</a></td><td>Art, fiction, CNF, humor, poetry, and fusions</td><td><span class="tag tag-paid">n.a. (not stated on page)</span></td><td>CLOSED — &#x27;currently closed for General Submissions&#x27; as of July 2026</td><td>Under 1,200 words; up to two pieces at once. Currently closed.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Flash-only markets are noted in the description. A few venues are cyclical or briefly paused — confirm the live status on each journal's own site before submitting.</p>
+  </section>
+
+  <section id="contests">
+    <div class="section-head">
+      <div class="kicker">Part Two · Where to Submit</div>
+      <h2>Contests for Emerging Fiction Writers</h2>
+    </div>
+    <p>Contests can bring larger prizes and visibility. Several below are reserved for writers without a book from a major press — a genuine advantage for newer writers. Deadlines rotate annually; the dates shown reflect the 2026 cycle unless noted.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Contest</th><th>Type</th><th>Fee</th><th>Prize</th><th>Deadline / Cycle</th></tr></thead>
+        <tbody>
+          <tr><td class="name"><a href="https://mastersreview.com/winter-short-story-award-for-new-writers/" target="_blank" rel="noopener">The Masters Review Short Story Award for New Writers (Winter cycle)</a></td><td>Short story (fiction or narrative nonfiction, under 6,000 words)</td><td><span class="tag tag-paid">$20</span></td><td>$3,000 + online publication + agency review (2nd $300, 3rd $200)</td><td>February 1, 2026 (bi-annual; also a Summer cycle Jul 1 – Aug 30, 2026)</td></tr>
+<tr><td class="name"><a href="https://mastersreview.com/flash-fiction-contest/" target="_blank" rel="noopener">The Masters Review Flash Fiction Contest (Spring Small Fiction Awards)</a></td><td>Flash (microfiction ≤500, flash 501–1,000, sudden 1,001–1,500 words)</td><td><span class="tag tag-paid">$20 (allows up to two stories)</span></td><td>$1,000 + publication per category (runners-up $200)</td><td>n.a. for 2026 (page shows prior cycle &#x27;Submissions Close June 1&#x27;); confirm current dates</td></tr>
+<tr><td class="name"><a href="https://www.pshares.org/submit/emerging-writers-contest" target="_blank" rel="noopener">Ploughshares Emerging Writer&#x27;s Contest (Fiction)</a></td><td>Short story (fiction, up to 6,500 words)</td><td><span class="tag tag-free">Free</span></td><td>$2,000 + publication in Ploughshares + conversation with Aevitas Creative Management</td><td>February 1 – March 31, 2026</td></tr>
+<tr><td class="name"><a href="https://www.boulevardmagazine.org/short-fiction-contest" target="_blank" rel="noopener">Boulevard Short Fiction Contest for Emerging Writers</a></td><td>Short story (fiction)</td><td><span class="tag tag-paid">$18 per story (includes a one-year print subscription)</span></td><td>$1,500 + publication in Boulevard</td><td>2026 cycle opens Sep 1, 2026; entries by Dec 31, 2026 (postmark) / midnight CT online</td></tr>
+<tr><td class="name"><a href="https://fracturedlit.com/anthology-4-prize/" target="_blank" rel="noopener">Fractured Lit Anthology Prize</a></td><td>Flash fiction (up to 1,000 words per story)</td><td><span class="tag tag-paid">$20 reading fee</span></td><td>$5,000 awarded among 20 finalists</td><td>n.a. for 2026 cycle (page shows prior cycle Sep 24 – Nov 19, 2023); confirm current dates</td></tr>
+<tr><td class="name"><a href="https://www.smokelong.com/the-smokelong-quarterly-award-for-flash-fiction-2026/" target="_blank" rel="noopener">The SmokeLong Quarterly Award for Flash Fiction (&#x27;The Smokey&#x27;)</a></td><td>Flash fiction (1,000 words or fewer)</td><td><span class="tag tag-paid">$15 one entry (Feb 1–Mar 31) / $17 (Apr 1–May 10); multi-entry bundles available</span></td><td>Grand $2,500; 2nd $1,000; 3rd $500; finalists $150 + publication</td><td>May 10, 2026</td></tr>
+<tr><td class="name"><a href="https://www.bathflashfictionaward.com/rules/" target="_blank" rel="noopener">Bath Flash Fiction Award</a></td><td>Flash fiction (max 300 words)</td><td><span class="tag tag-paid">£9.00 for one entry (early-bird/multi discounts)</span></td><td>£1,000 first; £300 second; £100 third; two £30 commendations + anthology publication</td><td>Three rounds/year; 2026 rounds closed Feb 1 and June 7; next round opens July 1, 2026 (closes early Oct)</td></tr>
+<tr><td class="name"><a href="https://bssp.blogs.bristol.ac.uk/rules/" target="_blank" rel="noopener">Bristol Short Story Prize</a></td><td>Short story (max 4,000 words)</td><td><span class="tag tag-free">£14 per story (250 free entries for those facing a cost barrier)</span></td><td>1st £1,500; 2nd £500; 3rd £250; 12 more shortlisted £50 each + anthology</td><td>January 31, 2026 (2026 prize year now closed; annual)</td></tr>
+<tr><td class="name"><a href="https://www.narrativemagazine.com/spring-2026-story-contest" target="_blank" rel="noopener">Narrative Story Contest (Spring 2026)</a></td><td>Short story / short-shorts / other prose (up to 15,000 words)</td><td><span class="tag tag-paid">$27 per entry</span></td><td>1st $2,500; 2nd $1,000; 3rd $500; up to ten finalists $100 each</td><td>June 26, 2026 (Spring cycle; contests run seasonally)</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">A few 2026 deadlines have passed or were still showing a prior cycle at verification — they illustrate the annual pattern; check each site for the next opening. UK contests (Bath, Bristol) are priced in GBP.</p>
+  </section>
+
+  <section id="tools">
+    <div class="section-head">
+      <div class="kicker">Part Two · Where to Submit</div>
+      <h2>Submission-Tracking &amp; Discovery Tools</h2>
+    </div>
+    <div class="tools">
+      <div class="tool"><h4><a href="https://www.submittable.com/discover" target="_blank" rel="noopener">Submittable</a></h4><div class="cost">Free for writers/submitters (create a free account; you only pay any fee the venue itself charges)</div><p>Industry-standard submission-management platform where writers submit to and track applications; Discover marketplace lists open calls.</p></div>
+<div class="tool"><h4><a href="https://www.chillsubs.com/" target="_blank" rel="noopener">Chill Subs</a></h4><div class="cost">Most features free; paid memberships (Chill Subs Better, Sub Club, Forever Workshop) $10/month each, or &#x27;Best&#x27; bundle $20/month</div><p>Free database of 3,000+ literary magazines and 1,200+ contests plus a submissions tracker and discovery tools.</p></div>
+<div class="tool"><h4><a href="https://thegrinder.diabolicalplots.com/" target="_blank" rel="noopener">The Submission Grinder</a></h4><div class="cost">Free (donation-supported)</div><p>Donation-supported submission tracker and market database for fiction, poetry, and nonfiction writers with a powerful market search.</p></div>
+<div class="tool"><h4><a href="https://duotrope.com/subscribe.aspx" target="_blank" rel="noopener">Duotrope</a></h4><div class="cost">Subscription: USD $6.00/month or $60.00/year (with free trial)</div><p>Award-winning database of publishers and agents with submission trackers, custom searches, deadline calendars, and statistics.</p></div>
+<div class="tool"><h4><a href="https://www.pw.org/literary_magazines" target="_blank" rel="noopener">Poets &amp; Writers</a></h4><div class="cost">n.a. (free to browse; no fee stated on page)</div><p>Editorial-vetted database of nearly 1,000 literary magazines with policies, guidelines, contacts, and open-reading-period filters.</p></div>
+    </div>
+    <p class="note">On a budget? Submittable + Chill Subs (or the Submission Grinder) + Poets &amp; Writers is a complete, no-cost toolkit.</p>
+  </section>
+
+  <section id="glossary">
+    <div class="section-head">
+      <div class="kicker">Reference</div>
+      <h2>Glossary of Submission Terms</h2>
+    </div>
+    <p>The vocabulary editors use, in plain language.</p>
+    <dl class="glossary">
+      <div><dt>Simultaneous submission</dt><dd>Sending the same story to more than one journal at once. Standard practice, but withdraw immediately anywhere it is accepted.</dd></div>
+<div><dt>Multiple submission</dt><dd>Sending more than one separate story to the same journal in one reading period. Usually discouraged unless the journal allows it.</dd></div>
+<div><dt>First Serial Rights</dt><dd>The right to be the first to publish a story. Reverts to you after publication; you keep the copyright.</dd></div>
+<div><dt>Reprint</dt><dd>A story published before (including on a blog or social media). Only certain journals accept reprints — check first.</dd></div>
+<div><dt>Flash fiction</dt><dd>Very short fiction, usually under 1,000 words; 'micro' is often under 300.</dd></div>
+<div><dt>Reading period</dt><dd>The window when a journal accepts submissions. Many open only a few months or weeks a year, or close at a monthly cap.</dd></div>
+<div><dt>Standard manuscript format</dt><dd>12-point serif, double-spaced, with a header carrying your name, title, and page number.</dd></div>
+<div><dt>Cover letter</dt><dd>A brief, professional note accompanying your story — not a place to summarize the plot.</dd></div>
+<div><dt>Contributor copies</dt><dd>Free copies of the issue your work appears in, often given in place of (or alongside) payment.</dd></div>
+<div><dt>Slush pile</dt><dd>The stack of unsolicited submissions editors read through. Yours starts here — that's normal.</dd></div>
+<div><dt>Fee waiver</dt><dd>A free pass around a submission fee, offered by many journals on request or for writers facing financial barriers.</dd></div>
+<div><dt>Tiered / expedited response</dt><dd>An optional paid upgrade some journals offer for a faster reply. Never required.</dd></div>
+    </dl>
+  </section>
+
+  <section id="plan">
+    <div class="section-head">
+      <div class="kicker">Get Started</div>
+      <h2>A Simple Starting Plan</h2>
+    </div>
+    <p>If this feels like a lot, start here. This four-step rhythm will place you on a professional footing within a single afternoon.</p>
+    <div class="plan">
+      <div class="plan-item"><div class="n">1</div><p>Pick three free journals whose fiction you admire and whose reading period is open now.</p></div>
+<div class="plan-item"><div class="n">2</div><p>Polish one story in standard manuscript format, opening as strong as you can.</p></div>
+<div class="plan-item"><div class="n">3</div><p>Write one short cover letter using the template above, tailoring the journal name for each.</p></div>
+<div class="plan-item"><div class="n">4</div><p>Log each submission in a spreadsheet or free tracker, then set a reminder to submit again next month.</p></div>
+    </div>
+    <p class="closing">Stories live when they find readers. Send them out, keep good records, and let each "no" move you toward the right "yes."</p>
+  </section>
+
+  <!-- PERSONAL NOTE -->
+  <section id="note">
+    <div class="personal-note">
+      <div class="pn-kicker">From the Publisher</div>
+      <h2>A Personal Note to You</h2>
+      <p>First, let me say how glad I am that you are here, and how much your writing has come to mean to me. Whatever happens with any single submission, please know that I believe in you and in the work you are doing.</p>
+      <p>I want to tell you something before you begin, because I wish someone had told me plainly when I was starting out: this was hard for me too. For years I sent my stories into the quiet and waited, and what came back, again and again, was <em>no</em>. The rejections arrived in bundles &mdash; some gentle, most simply silent &mdash; and every one of them asked whether I was willing to keep going. I decided that I was. Not because I felt sure of the work, but because I had come to believe that the writers who make it are rarely the most gifted in the room; they are the ones who keep sending, who let each <em>no</em> be a comma and never a period.</p>
+      <p>What carried me through was not confidence &mdash; it was persistence, and the quiet discipline of returning to the desk: revise, submit, write down the date, start the next story, and send again. It added up. Over the years my work has appeared in literary journals more than two hundred times &mdash; but every one of those began as a story sent into that same silence, unsure of its welcome. I promise you this: the acceptances, when they came, did not cancel the rejections. They grew out of them. Every <em>no</em> was teaching me something, even when it didn&rsquo;t feel that way.</p>
+      <p>I care very much that you get published &mdash; not someday, but truly, and not because publication is the only measure of a writer, but because your work deserves to be read, and because I know how much it means to hold that first acceptance in your hands. So I&rsquo;ll ask of you the same thing I once had to ask of myself, and I&rsquo;ll ask it gently: choose a story you believe in, find two or three journals from the lists in this guide, and submit it today. Not tomorrow. Not when it feels perfect &mdash; it never will. Today. The waiting is part of the work, and you are more ready than you think.</p>
+      <p>And let me say this plainly, because I mean it: I think of you as my peers &mdash; fellow writers, not students beneath me. I respect every one of you. It has been one of the great joys of my life to witness your talent up close and to sit with you in conversation about writing and literature, and I have come away from those hours happier and richer for them. I am confident &mdash; genuinely, not politely &mdash; that you will be published if you persist.</p>
+      <p>One last thing. Other writers were generous with me when I was starting out, and that generosity is a debt I can only repay forward &mdash; so on the pages that follow, I&rsquo;ve shared a little of my own work with you: what I believe about writing, and two introductions from books I&rsquo;m still making. They are not offered as the best of anything, only as honest examples, one writer to another.</p>
+      <p>I&rsquo;m rooting for you &mdash; always. Be gentle with yourself, keep going, and know that I am in your corner every step of the way.</p>
+      <p class="pn-sign">&mdash; James Mulhern, Silver Current Press</p>
+    </div>
+  </section>
+
+  <!-- FEATURED SAMPLE: ARTISTIC CREED -->
+  <section id="creed">
+    <div class="creed-wrap">
+      <div class="pn-kicker">A Gift, One Writer to Another</div>
+      <h2>An Artistic Creed</h2>
+      <p class="creed-intro">Over the years, so many writers generously shared their work with me &mdash; their drafts, their beliefs, their hard-won lessons &mdash; and I would not be where I am without that generosity. So let me share some of mine with you in return. I do not offer these because I think they are the best; I don&rsquo;t. I offer them simply as honest examples you can look at, learn from, and then set aside to write something that sounds like no one but you. Here is one of mine &mdash; a statement of what I believe about my own work.</p>
+      <div class="creed">
+        <p>I write as a Transcendentalist &mdash; in sensibility and in spirit. I came to this not as a doctrine to be argued but as a way of seeing I could not put down. Emerson taught me to trust the inner light and to call the great current of things the Oversoul. Thoreau taught me to look long and closely at the near and the small until they open. Whitman taught me that a single life, honestly told, contains multitudes and belongs to everyone. I am in their debt, and I do not pretend otherwise.</p>
+        <p>I believe the sacred is not far off but here &mdash; in a kitchen, a sickroom, a stretch of shoreline, the face of someone loved and lost. I believe the soul is not sealed within us but joined, through the Oversoul, to every other soul that has been or will be. And I believe that nothing true is ever finished. The Oversoul repeats and refines what it has made, never completing it, and I take my instruction from that unhurried, unfinished work.</p>
+        <p>This is why I return, deliberately, to the same scenes, the same symbols, the same kinds of people. The repetitions in my work are purposeful &mdash; they are my way of pointing to the truth I hold. I am not repeating myself; I am practicing recurrence, gathering up the same enduring truths and setting them down again in new hands, new voices, new incarnations. What is laid down is taken up. Nothing we love is lost; like water, like breath, like light, it is only changed, only carried forward, only lived anew.</p>
+        <p>So I write from mercy rather than judgment, and I extend that mercy to every character I make. I treat each story as a small act of faith &mdash; a way of summoning what is unseen and holding it in the light a little longer. If my work has one purpose, it is this: to show that the ordinary is holy, that memory is a form of love, and that we are, all of us, one people &mdash; gathered, remade, and never truly parted.</p>
+        <p class="creed-sign">&mdash; James F. Mulhern</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED SAMPLES: BOOK INTRODUCTIONS -->
+  <section id="intros">
+    <div class="creed-wrap">
+      <div class="pn-kicker">From My Own Desk &mdash; Works in Progress</div>
+      <h2>Two Sample Introductions</h2>
+      <p class="creed-intro">In the same generous spirit &mdash; the way other writers once shared their pages with me &mdash; I want to hand you two more of mine. Many books open with an introduction or a foreword, and writing one for your own work is harder than it looks. Please don&rsquo;t take these as the best examples; they are simply mine, and I offer them humbly. And I want you to see them honestly, as <em>works in progress</em>: both books are still being made as I write this, and I am still revising these very pages. I cross out, begin again, and doubt them, exactly as you will with yours. That is not a sign you are failing. It is the work. I share them only so you have something real to look at when the time comes to write your own.</p>
+
+      <h3 class="intro-h3">Introduction &mdash; <em>All We Ever Needed</em> (a story collection)</h3>
+      <div class="creed">
+        <p>The stories in <em>All We Ever Needed</em> move through kitchens, classrooms, beaches, bookstores, apartments, and fading neighborhoods where love and damage rarely arrive one at a time. Again and again, people try to live inside family histories that have already marked them. Some are buoyed by memory, some haunted by it, and some use wit, cruelty, appetite, or make-believe to keep from being swallowed by what they know.</p>
+        <p>A few images recur by design. Water is the constant: a seawater cure sought on the Feast of the Assumption, a pond that has kept its drowned, a bath drawn for an aging mother, a fountain, a river, and at last a rain that leaves a man drenched to the bone. I have let it move through the book as more than weather. Water is the oldest sign of the spiritual life &mdash; the water of baptism, of ruin and renewal &mdash; and it runs beneath these ordinary lives as the possibility, never quite promised, of being made clean.</p>
+        <p>I take language to be a sacred inheritance and the act of naming to be a kind of devotion. These stories are my prayers, and my prayers are my stories; the recurrences in these pages are laid there in that spirit. What remains, after the jokes sour and the illusions fall away, is the question the collection keeps returning to: what, in the end, sustains us? The answers here are partial, unruly, and deeply human.</p>
+        <p class="creed-sign">&mdash; James Mulhern &nbsp;<span class="wip-tag">(draft &middot; in progress)</span></p>
+      </div>
+
+      <h3 class="intro-h3">Foreword &mdash; <em>Mia Bambina and Other Stories</em></h3>
+      <div class="creed">
+        <p>There is a durable American lineage of fiction that begins not with spectacle but with a room, a family car, a parish, a school hallway, a kitchen table at which someone says the wrong thing and the air changes. One hears, at moments in these stories, the grave attentiveness of Andre Dubus, the domestic acuity of Alice McDermott, the religious pressure of Mary Gordon, the rueful comic steadiness of Richard Russo.</p>
+        <p>The five stories gathered in <em>Mia Bambina and Other Stories</em> move through Boston dormitories and beaches, old kitchens and classrooms, South Florida caf&eacute;s and storefronts heavy with incense. Their geography is specific, but the territory is interior: the strange compromise by which people continue to live near shame, grief, lust, resentment, love. The sacred and the profane are not opposites here. They are neighbors. In certain families, they are sisters.</p>
+        <p>These are stories of mortality, memory, and moral compromise told without sentimentality. They ask how much harm can be done in the name of love, how much mercy can survive in a damaged person, and whether any ritual can prepare us for the final silence. The answer, mercifully, is not simplified. The stories look hard. They do not look away.</p>
+        <p class="creed-sign">&mdash; from the front matter of <em>Mia Bambina and Other Stories</em> &nbsp;<span class="wip-tag">(draft &middot; in progress)</span></p>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<footer>
+  <div class="footer-inner">
+    <div class="rule" style="margin:0 auto 20px;"></div>
+    <div class="press">Silver Current Press</div>
+    <div class="tag-line">Poets &amp; Writers Resources</div>
+    <p class="disclaimer">All venues verified July 2026. Reading periods, fees, and deadlines change frequently — always confirm current guidelines on each venue's own website before submitting.</p>
+    <p class="meta">Prepared by James F. Mulhern · July 2026 · <a href="Submitting_Short_Stories.pdf" download style="color:var(--gold-soft);">Download the printable PDF</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
